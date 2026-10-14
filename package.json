@@ -20,7 +20,8 @@
   "main": "./index.js",
   "scripts": {
     "test": "node --test test/*.test.mjs",
-    "check": "npm test"
+    "check": "npm test",
+    "test:matrix": "node test/release-matrix.mjs"
   },
   "pi": {
     "extensions": [
