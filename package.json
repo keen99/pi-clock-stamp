@@ -1,0 +1,38 @@
+{
+  "name": "pi-clock-stamp",
+  "version": "1.0.0",
+  "description": "pi extension: inject a fresh one-line timestamp into the system prompt every turn so the model knows the current time",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "timestamp",
+    "clock",
+    "time-awareness"
+  ],
+  "license": "MIT",
+  "author": "David Raistrick",
+  "homepage": "https://github.com/keen99/pi-clock-stamp",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keen99/pi-clock-stamp.git"
+  },
+  "type": "module",
+  "main": "./index.js",
+  "scripts": {
+    "test": "node --test test/*.test.mjs",
+    "check": "npm test"
+  },
+  "pi": {
+    "extensions": [
+      "./index.js"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "peerDependenciesMeta": {
+    "@earendil-works/pi-coding-agent": {
+      "optional": true
+    }
+  }
+}
